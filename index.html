@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinedu Uzim | Data Scientist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20c154ad51.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav class="navbar">
+                <img src="image/logo.png" alt="Logo">
+                <div class="menu-icon" onclick="toggleMenu(this)">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p><span class="typing-text"></span></p>
+                <h1>Hi, I'm <span>Uzim</span><br> Chinedu.</h1>
+            </div>
+
+        </div>
+    </div>
+<!--------------About section---------------------------------->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/pic3.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>I’m Chinedu Uzim, a passionate Frontend Developer and Data Scientist with a strong background in building responsive websites and analyzing data for insights. 
+                        I develop user interfaces using HTML, CSS, and JavaScript, and I perform data analysis and modeling using R, Python, SQL, and Power BI.
+                       <br><br>
+                        I’m currently pursuing an MSc in Data Analytics and Technologies at the University of Greater Manchester, UK. 
+                        With hands-on experience in data preprocessing, machine learning, and visualization in R, my goal is to combine design and data science to build innovative and impactful solutions.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skill</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                 <li><span>Frontend Development</span><br>HTML, CSS, JavaScript, Bootstrap</li>
+                                 <li><span>Data Science</span><br>Python, R, SQL, Machine/Deep Learning, Data Visualization</li>
+                                 <li><span>Data Tools</span><br>Power BI, Excel, AI, Jupyter Notebook, RStudio</li>
+                                 <li><span>Version Control & Deployment</span><br>Git, GitHub, GitHub Pages, Netlify</li>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                
+                                <li><span>Data Science Projects</span><br>Developed machine learning models and performed statistical analysis in R and Python</li>
+                                <li><span>Web Scraping & Analysis</span><br>Scraped and analyzed car listings from The AA and Cinch using R (rvest, httr, tidyverse)</li>
+                                <li><span>Data Visualization</span><br>Created interactive dashboards using Power BI and Excel</li>
+                                <li><span>Frontend Development</span><br>Built responsive websites using HTML, CSS, JavaScript, and Bootstrap</li>
+                                <li><span>Version Control</span><br>Collaborated on projects using Git and GitHub</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>MSc Data Analytics and Technologies from University of Greater Manchester, United Kingdom</li>
+                                <li><span>2022</span><br>Bsc Statistics from Alex Ekwueme Federal <br>University Ndufu Alike Ikwo, Ebonyi State</li>
+                                <li><span>2017</span><br>SSCE from Maranatha Secondary School Mba-Ano, Imo State.</li>
+                            </ul>
+                            
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------service section---------------------------------->
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub_title">Projects</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h2>Data Science & Analysis</h2>
+                    <p>I analyze datasets to uncover insights, using tools like R, Python, Power BI, and Excel. I build machine learning models to solve real-world problems.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Web Scraping & Automation</h2>
+                    <p>I design web scrapers using R and Python to extract, clean, and analyze data for research, business intelligence, and decision-making support.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I create responsive and interactive websites using HTML, CSS, JavaScript, and Bootstrap, ensuring both functionality and aesthetics across all devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--------------Tech Stack---------------------------------->
+    <div id="tech-stack" class="services">
+    <div class="container">
+        <h1 class="sub_title">Tech Stack</h1>
+        <div class="tech-icons">
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                <p>HTML</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                <p>CSS</p>
+                </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+                <p>R</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                <p>Git</p>
+            </div>
+            <div class="tech-item">
+                <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI">
+                <p>Power BI</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!--------------Portfolio---------------------------------->
+    <div id="portfolio">
+        <div class="ccontainer">
+            <h1 class="sub_titl">My Work</h1>
+        </div>
+        <div class="work-list">
+            <div class="work">
+              <a href="https://chinedu.shinyapps.io/housePriceApp/" target="_blank">
+              <img src="image/work12.png" alt="House Price Prediction Project">
+              </a>
+             </div>   
+            <div class="work">
+                <img src="image/work.png" alt="">
+            </div>
+            <div class="work">
+                <img src="image/data.jpeg" alt="">
+            </div>
+            <div class="work">
+                <img src="image/page.png" alt="">
+            </div>
+            </div>
+     <!--------------Contact---------------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i> 
+                        <a href="mailto:chineduuzim1@gmail.com">chineduuzim1@gmail.com</a>
+                    </p>
+
+                    <p><i class="fa-solid fa-phone"></i> 
+                        <a href="tel:+2348062177069">+234 8062177069</a>
+                    </p>
+
+                    <p><i class="fa-solid fa-phone"></i> 
+                        <a href="tel:+447979667050">+44 7979667050</a>
+                    </p>
+
+                    <div class="social-icon">
+                        <a href="https://wa.me/message/7RMRUTZGOQVQK1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+                        <a href="https://l.instagram.com/?u=http%3A%2F%2Fwww.linkedin.com%2Fin%2Fchinedu-uzim&e=ATOruh87TVzm-OMDiC2yR9bqCnzPrSVysLmZfsI_HHZCMkUMytM7GTywo_hyHxk9FpbHoyiPZqFFDu049rSK0w&s=1" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://www.instagram.com/chinedu_uzim/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+                    </div>
+                    <a href="Chinedu_Uzim_CV.pdf" class="btn" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mvgalldk" method="POST">
+                        <input type="text" name="name" placeholder="Type your name" required>
+                        <input type="email" name="email" placeholder="Type your email" required>
+                        <textarea name="message" rows="6" placeholder="You can drop a message..." required></textarea>
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+   <script src="main.js"></script> 
+   <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Chinedu Uzim. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="https://wa.me/message/7RMRUTZGOQVQK1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/chinedu-uzim" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/chinedu_uzim/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+        <a href="#header" class="scroll-top"><i class="fas fa-arrow-up">
+
+        </i></a>
+</body>
+</html>
+
