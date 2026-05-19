@@ -88,7 +88,7 @@
         .about-card { background: var(--white); border-radius: 12px; padding: 0; border: 0.5px solid var(--gray-border); transition: all 0.25s; overflow: hidden; }
         .about-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.1); }
         .card-top { padding: 20px 22px 16px; }
-        .card-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 14px; }
+        .card-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 14px; min-width: 40px; }
         .icon-purple { background: var(--purple-faint); color: var(--purple); }
         .icon-teal { background: var(--teal-faint); color: var(--teal); }
         .icon-amber { background: var(--amber-faint); color: var(--amber); }
@@ -242,17 +242,23 @@
         .reveal.visible { opacity: 1; transform: translateY(0); }
 
         /* MOBILE */
+        @media (max-width: 1024px) {
+            .about-cards { grid-template-columns: repeat(2, 1fr); }
+            .projects-grid { grid-template-columns: repeat(2, 1fr); }
+        }
         @media (max-width: 768px) {
             nav { padding: 0 20px; }
             .nav-links, .nav-cta { display: none; }
             .menu-toggle { display: block; }
             .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: rgba(10,10,15,0.98); padding: 20px 24px; gap: 18px; border-bottom: 0.5px solid var(--dark-border); }
-            #hero, section { padding-left: 20px; padding-right: 20px; }
+            #hero { padding: 90px 20px 50px !important; }
+            section { padding: 44px 20px !important; }
             nav { padding: 0 20px; }
-            #tech { padding-left: 20px; padding-right: 20px; }
+            #tech { padding: 44px 20px !important; }
             footer { padding: 20px; }
-            .about-cards { grid-template-columns: repeat(2, 1fr); }
-            .projects-grid { grid-template-columns: 1fr; }
+            .about-cards { grid-template-columns: repeat(2, 1fr) !important; }
+            .projects-grid { grid-template-columns: 1fr !important; }
+            .about-card { min-height: auto; }
             .contact-grid { grid-template-columns: 1fr; gap: 40px; }
             footer { padding: 20px; }
             .press-body { flex-direction: column; }
