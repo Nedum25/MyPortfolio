@@ -45,7 +45,7 @@
         .menu-toggle { display: none; color: #fff; font-size: 20px; cursor: pointer; background: none; border: none; }
 
         /* HERO */
-        #hero { min-height: 100vh; background: var(--dark); padding: 120px 40px 80px; position: relative; overflow: hidden; display: flex; align-items: center; }
+        #hero { min-height: 100vh; background: var(--dark); padding: 100px 40px 60px; position: relative; overflow: hidden; display: flex; align-items: center; }
         .hero-grid-bg {
             position: absolute; inset: 0; pointer-events: none;
             background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
@@ -68,32 +68,43 @@
         .btn-primary:hover { background: var(--purple-light); transform: translateY(-1px); }
         .btn-outline { background: transparent; color: rgba(255,255,255,0.65); font-family: 'DM Sans', sans-serif; font-size: 14px; padding: 12px 24px; border-radius: 8px; border: 0.5px solid rgba(255,255,255,0.18); cursor: pointer; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; transition: all 0.2s; }
         .btn-outline:hover { border-color: rgba(255,255,255,0.4); color: #fff; }
-        .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 56px; padding-top: 40px; border-top: 0.5px solid var(--dark-border); animation: fadeUp 0.6s 0.5s ease both; }
+        .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 36px; padding-top: 28px; border-top: 0.5px solid var(--dark-border); animation: fadeUp 0.6s 0.5s ease both; }
         .stat-num { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 700; color: #fff; }
         .stat-label { font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 3px; }
         @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 
         /* SECTIONS */
-        section { padding: 88px 40px; }
+        section { padding: 56px 40px; }
         .container { max-width: 880px; margin: 0 auto; }
-        .section-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 48px; }
+        .section-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
         .eyebrow-text { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--purple); white-space: nowrap; }
         .eyebrow-line { flex: 1; height: 0.5px; background: var(--gray-border); }
 
         /* ABOUT */
         #about { background: var(--off-white); }
-        .about-intro { font-size: 17px; line-height: 1.85; color: #333; margin-bottom: 40px; max-width: 680px; }
+        .about-intro { font-size: 16px; line-height: 1.8; color: #333; margin-bottom: 24px; max-width: 680px; }
         .about-intro strong { color: var(--purple); font-weight: 500; }
-        .about-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
-        .about-card { background: var(--white); border-radius: 12px; padding: 22px; border: 0.5px solid var(--gray-border); transition: all 0.25s; }
-        .about-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(83,74,183,0.1); border-color: rgba(83,74,183,0.25); }
-        .card-icon { width: 38px; height: 38px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 17px; margin-bottom: 13px; }
+        .about-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+        .about-card { background: var(--white); border-radius: 12px; padding: 0; border: 0.5px solid var(--gray-border); transition: all 0.25s; overflow: hidden; }
+        .about-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.1); }
+        .card-top { padding: 20px 22px 16px; }
+        .card-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-bottom: 14px; }
         .icon-purple { background: var(--purple-faint); color: var(--purple); }
         .icon-teal { background: var(--teal-faint); color: var(--teal); }
         .icon-amber { background: var(--amber-faint); color: var(--amber); }
         .icon-blue { background: var(--blue-faint); color: var(--blue); }
-        .about-card h3 { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; color: #111; margin-bottom: 7px; }
+        .about-card h3 { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; color: #111; margin-bottom: 6px; }
         .about-card p { font-size: 12px; color: #666; line-height: 1.65; }
+        .card-footer { padding: 10px 22px 14px; border-top: 0.5px solid var(--gray-border); }
+        .about-card.card-purple { border-top: 3px solid var(--purple); }
+        .about-card.card-teal { border-top: 3px solid var(--teal); }
+        .about-card.card-amber { border-top: 3px solid var(--amber); }
+        .about-card.card-blue { border-top: 3px solid var(--blue); }
+        .card-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+        .card-purple .card-tag { color: var(--purple); }
+        .card-teal .card-tag { color: var(--teal); }
+        .card-amber .card-tag { color: var(--amber); }
+        .card-blue .card-tag { color: var(--blue); }
 
         /* SKILLS */
         #skills { background: var(--white); }
@@ -106,10 +117,15 @@
 
         /* PROJECTS */
         #projects { background: var(--off-white); }
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
-        .project-card { background: var(--white); border-radius: 12px; padding: 22px; border: 0.5px solid var(--gray-border); transition: all 0.25s; display: flex; flex-direction: column; }
+        .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+        .project-card { background: var(--white); border-radius: 12px; padding: 22px; border: 0.5px solid var(--gray-border); border-left: 4px solid var(--gray-border); transition: all 0.25s; display: flex; flex-direction: column; }
         .project-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.07); }
-        .project-card.featured { border: 1.5px solid rgba(83,74,183,0.28); }
+        .project-card.featured { border-left: 4px solid var(--purple); }
+        .project-card.p-health { border-left: 4px solid var(--teal); }
+        .project-card.p-ai { border-left: 4px solid var(--purple); }
+        .project-card.p-gis { border-left: 4px solid var(--green); }
+        .project-card.p-data { border-left: 4px solid var(--amber); }
+        .project-card.p-web { border-left: 4px solid var(--blue); }
         .proj-tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 20px; margin-bottom: 13px; letter-spacing: 0.5px; text-transform: uppercase; }
         .tag-ai { background: var(--purple-faint); color: var(--purple); }
         .tag-health { background: var(--teal-faint); color: var(--teal); }
@@ -122,7 +138,7 @@
         .proj-link:hover { gap: 8px; }
 
         /* TECH STACK */
-        #tech { background: var(--dark); padding: 70px 40px; }
+        #tech { background: var(--dark); padding: 56px 40px; }
         #tech .eyebrow-text { color: var(--purple-light); }
         #tech .eyebrow-line { background: var(--dark-border); }
         .tech-grid { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -271,7 +287,7 @@
         </div>
         <h1 class="hero-name">Chinedu<br><span>Uzim.</span></h1>
         <p class="hero-role">
-            <em>AI Researcher</em> &nbsp;·&nbsp; Data Scientist &nbsp;·&nbsp; Statistician &nbsp;·&nbsp; Frontend Dev.
+            <em>AI Researcher</em> &nbsp;·&nbsp; Data Scientist &nbsp;·&nbsp; Statistician &nbsp;·&nbsp; Frontend Developer
         </p>
         <div class="hero-tags">
             <span class="hero-tag">Causal Modelling</span>
@@ -280,7 +296,7 @@
             <span class="hero-tag">Proactive AI Systems</span>
             <span class="hero-tag">Food Security Research</span>
             <span class="hero-tag">Medical AI</span>
-            <span class="hero-tag">Business Intelligence</span>
+            <span class="hero-tag">GIS &amp; Remote Sensing</span>
             <span class="hero-tag">Statistician</span>
         </div>
         <div class="hero-btns">
@@ -325,25 +341,37 @@
             I'm also a <strong>published researcher</strong> and the creator of <strong>SmartSkan</strong>, an AI-powered medical scan recommendation system featured by Skannr.com.
         </p>
         <div class="about-cards reveal">
-            <div class="about-card">
-                <div class="card-icon icon-purple"><i class="fa-solid fa-brain"></i></div>
-                <h3>PhD Research</h3>
-                <p>Causal, predictive &amp; proactive AI for sustainable food security — connecting climate variability to policy in Sub-Saharan Africa.</p>
+            <div class="about-card card-purple">
+                <div class="card-top">
+                    <div class="card-icon icon-purple"><i class="fa-solid fa-brain"></i></div>
+                    <h3>PhD Research</h3>
+                    <p>Causal, predictive &amp; proactive AI for sustainable food security — connecting climate variability to policy in Sub-Saharan Africa.</p>
+                </div>
+                <div class="card-footer"><span class="card-tag">Leeds Beckett University</span></div>
             </div>
-            <div class="about-card">
-                <div class="card-icon icon-teal"><i class="fa-solid fa-stethoscope"></i></div>
-                <h3>SmartSkan</h3>
-                <p>Built Skannr's intelligent symptom-to-scan AI system — hybrid medical rules + Google Gemini AI. Featured in Skannr's press spotlight.</p>
+            <div class="about-card card-teal">
+                <div class="card-top">
+                    <div class="card-icon icon-teal"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3>SmartSkan</h3>
+                    <p>Built Skannr's intelligent symptom-to-scan AI system — hybrid medical rules + Google Gemini AI. Featured in Skannr's press spotlight.</p>
+                </div>
+                <div class="card-footer"><span class="card-tag">Medical AI · Press Featured</span></div>
             </div>
-            <div class="about-card">
-                <div class="card-icon icon-amber"><i class="fa-solid fa-chart-line"></i></div>
-                <h3>Data Science</h3>
-                <p>Python, R, SQL, Power BI — from statistical modelling and GIS analysis to machine learning pipelines and interactive dashboards.</p>
+            <div class="about-card card-amber">
+                <div class="card-top">
+                    <div class="card-icon icon-amber"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Data Science</h3>
+                    <p>Python, R, SQL, Power BI — from statistical modelling and GIS analysis to machine learning pipelines and interactive dashboards.</p>
+                </div>
+                <div class="card-footer"><span class="card-tag">Published Researcher</span></div>
             </div>
-            <div class="about-card">
-                <div class="card-icon icon-blue"><i class="fa-solid fa-code"></i></div>
-                <h3>Frontend Dev</h3>
-                <p>Responsive web apps with HTML, CSS, JavaScript, Bootstrap, and React/Vite. Deployed on GitHub Pages and Netlify.</p>
+            <div class="about-card card-blue">
+                <div class="card-top">
+                    <div class="card-icon icon-blue"><i class="fa-solid fa-code"></i></div>
+                    <h3>Frontend Dev</h3>
+                    <p>Responsive web apps with HTML, CSS, JavaScript, Bootstrap, and React/Vite. Deployed on GitHub Pages and Netlify.</p>
+                </div>
+                <div class="card-footer"><span class="card-tag">chineduuzim.com</span></div>
             </div>
         </div>
     </div>
@@ -429,31 +457,31 @@
             <div class="eyebrow-line"></div>
         </div>
         <div class="projects-grid reveal">
-            <div class="project-card featured">
+            <div class="project-card featured p-health">
                 <span class="proj-tag tag-health">Medical AI</span>
                 <h3>SmartSkan</h3>
                 <p>An intelligent symptom-to-scan recommendation system combining structured medical rules with Google Gemini AI. Integrated with Skannr's provider network — patients see real scan options with pricing and instant booking.</p>
                 <a href="https://skannr.com/in-the-spotlight" target="_blank" class="proj-link">View feature <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
             </div>
-            <div class="project-card featured">
+            <div class="project-card featured p-ai">
                 <span class="proj-tag tag-ai">Proactive AI</span>
                 <h3>Food Security Decision Support</h3>
                 <p>PhD research — a five-layer AI system connecting climate variability and agricultural data to actionable policy recommendations for Sub-Saharan Africa. Causal, predictive, and proactive AI layers.</p>
                 <a href="#publications" class="proj-link">See publication <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
             </div>
-            <div class="project-card">
+            <div class="project-card p-gis">
                 <span class="proj-tag tag-gis">GIS Research</span>
                 <h3>PGIS for Precision Rice Farming</h3>
                 <p>Co-authored research developing a Personalized Geospatial Information System for rice production optimisation in Ebonyi State, Nigeria — using Sentinel-1 SAR data, spatial analysis, and statistical modelling.</p>
                 <a href="https://doi.org/10.38124/ijisrt/26may211" target="_blank" class="proj-link">Read paper <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
             </div>
-            <div class="project-card">
+            <div class="project-card p-data">
                 <span class="proj-tag tag-data">Data Science</span>
                 <h3>House Price Predictor</h3>
                 <p>Machine learning model built in R with an interactive Shiny web application for real-time house price prediction. Deployed live for public use.</p>
                 <a href="https://chinedu.shinyapps.io/housePriceApp/" target="_blank" class="proj-link">Live app <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
             </div>
-            <div class="project-card">
+            <div class="project-card p-web">
                 <span class="proj-tag tag-web">Web Scraping</span>
                 <h3>Car Market Analysis</h3>
                 <p>Scraped and analysed car listings from The AA and Cinch using R — rvest, httr, and tidyverse pipelines — to uncover market pricing trends and insights.</p>
@@ -596,7 +624,7 @@
             <div class="edu-item">
                 <div class="edu-dot muted"></div>
                 <div class="edu-year">2017</div>
-                <div class="edu-degree">West African Examinations Council</div>
+                <div class="edu-degree">SSCE</div>
                 <div class="edu-inst">Maranatha Secondary School Mba-Ano, Imo State, Nigeria</div>
             </div>
         </div>
@@ -618,11 +646,17 @@
                     <a href="mailto:chineduuzim1@gmail.com" class="contact-item">
                         <i class="fa-solid fa-envelope"></i> chineduuzim1@gmail.com
                     </a>
+                    <a href="tel:+447979667050" class="contact-item">
+                        <i class="fa-solid fa-phone"></i> +44 7979 667050
+                    </a>
+                    <a href="tel:+2348062177069" class="contact-item">
+                        <i class="fa-solid fa-phone"></i> +234 806 217 7069
+                    </a>
                 </div>
                 <div class="social-row">
                     <a href="https://www.linkedin.com/in/chinedu-uzim" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Nedum25" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.researchgate.net/profile/Chinedu-Uzim" target="_blank" class="social-btn"><i class="fa-brands fa-researchgate"></i></a>
+                    <a href="https://github.com/Nedum25" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
                     <a href="https://x.com/ChineduUzim1" target="_blank" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div>
