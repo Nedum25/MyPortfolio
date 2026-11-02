@@ -199,6 +199,13 @@
         .pub-journal { font-size: 14.5px; color: var(--muted); font-style: italic; margin-bottom: 14px; }
         .pub-abstract { font-size: 15.5px; color: var(--text); line-height: 1.75; margin-bottom: 22px; }
         .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+        .pub-card.ack { border-left-color: #C9C6D8; }
+        .chip-muted { background: #F0EFF5; color: var(--muted); }
+        .pub-role { font-size: 15.5px; color: var(--text); line-height: 1.75; margin-bottom: 22px; padding: 14px 16px; background: var(--bg-alt); border-radius: 10px; }
+        .pub-role strong { color: var(--ink); font-weight: 600; }
+        .sub-label { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin: 36px 0 16px; }
+        .sub-label h3 { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: var(--ink); }
+        .sub-label p { font-size: 14.5px; color: var(--muted); }
         .btn-sm { font-size: 14px; padding: 9px 16px; border-radius: 9px; }
 
         /* ── PROJECTS ── */
@@ -329,7 +336,7 @@
             .research-card { padding: 26px 22px; }
             .research-card h3 { font-size: 21px; }
             .pub-card { padding: 24px 22px; }
-            .pub-label { flex-direction: column; gap: 4px; }
+            .pub-label, .sub-label { flex-direction: column; gap: 4px; }
             .projects-grid { grid-template-columns: 1fr; }
             .quote-card { padding: 34px 26px 28px; }
             .quote-card blockquote { font-size: 17.5px; }
@@ -476,6 +483,25 @@
             <p class="pub-abstract">The study develops a personalised GIS framework that combines Sentinel-1 SAR remote sensing, geospatial mapping and agricultural statistics to give site-specific recommendations for rice production in Ebonyi State, Nigeria, addressing soil fertility decline, climate variability and inefficient use of resources.</p>
             <div class="btn-row">
                 <a href="https://doi.org/10.38124/ijisrt/26may211" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Read the paper</a>
+            </div>
+        </article>
+
+        <div class="sub-label reveal">
+            <h3>Acknowledged contributions</h3>
+            <p>Credited in the paper, not as an author</p>
+        </div>
+        <article class="card pub-card ack reveal">
+            <div class="pub-meta">
+                <span class="chip chip-muted">Acknowledged for data analysis</span>
+                <span class="chip chip-muted">Conference paper</span>
+                <span class="chip chip-plain">September 2025</span>
+            </div>
+            <h4>The Reach of Digital Games and Their Potential as Global Communication Tools</h4>
+            <p class="pub-authors">Yau, J., Harris, R., Hollins, P., Garg, A., Hewage, P., Ower, J., Schuur, J., Griffiths, D., Watson, P., Iwendi, C. and Drachsler, H.</p>
+            <p class="pub-journal">Proceedings of the 19th European Conference on Games Based Learning (ECGBL), Vol. 19, No. 2, pp. 910–917. DOI: 10.34190/ecgbl.19.2.3874</p>
+            <p class="pub-role"><strong>My contribution:</strong> I supported the data analysis for Play2Act, a case study run with the United Nations Development Programme within the EU and UKRI-funded GREAT project. Short climate surveys placed inside popular mobile games reached almost one million players and produced about 181,000 completed responses.</p>
+            <div class="btn-row">
+                <a href="https://doi.org/10.34190/ecgbl.19.2.3874" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Read the paper</a>
             </div>
         </article>
     </div>
